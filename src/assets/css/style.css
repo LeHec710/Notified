@@ -1,0 +1,223 @@
+
+/* GENERAL */
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --dark-gray: #1f1c23;
+    --gray: #332f35;
+    --light-gray: #4c4550;
+    --lighter-gray: #58505c;
+    --white: #e1e1e1;
+    --color-primary: #f79e60;
+    --color-1: #eaeaea;
+    --color-2: #a198a9;
+}
+
+body {
+    background: var(--gray);
+    color: var(--color-1);
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: .1ch;
+    overflow-y: overlay;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    padding: 1em 1.5em;
+    cursor: pointer;
+    color: var(--color-2);
+    background-color: var(--light-gray);
+    border-radius: 5px;
+    margin: .5em auto;
+    margin-right: 1em;
+    border:transparent;
+    transition: background-color .3s ease, color .3s ease;
+}
+button:hover {
+    background-color: var(--lighter-gray);
+    color: var(--color-1);
+}
+button.big.center {
+    margin: 0 auto;
+    font-size: 2em;
+}
+
+/* NAVBAR */
+nav {
+    width: 100%;
+    min-height: 5em;
+    height: 8vh;
+    background-color: var(--dark-gray);}
+
+nav .menu {
+    height: 100%;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+nav .menu .menu-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .menu .menu-item {
+    transition: color .3s ease, border-color .3s ease;
+}
+
+nav .menu .menu-items .menu-item {
+    margin: 0 2em;
+}
+
+nav .menu .menu-item:hover {
+    color: var(--color-2);
+}
+
+nav .menu .menu-item {
+    text-decoration: none;
+}
+
+nav .menu .menu-logo {
+    font-weight: 600;
+}
+
+nav .menu .menu-link {
+    padding: .8em 1.2em;
+    border-radius: 5px;
+    border: 1px solid var(--color-1);
+    color: var(--color-1);
+    transition: color .3s ease, border-color .3s ease;
+}
+
+nav .menu .menu-link:hover {
+    color: var(--color-2)!important;
+    border-color: var(--color-2);
+}
+
+/* MAIN CONTENT */
+main {
+    width: 100vw;
+    padding: min(5vw, 20em);
+    padding-bottom: 0;
+}
+
+main .toast-spawner.example {
+    margin: 1em 0;
+    margin-bottom: 1.5em;
+    margin-left: 0;
+}
+main .toast-spawner.example .toast {
+    margin: 0;
+}
+
+
+main h1 {
+    margin-bottom: 1em;
+}
+
+main h1.center {
+    text-align: center;
+}
+
+/* SECTIONS */
+.section {
+    margin-bottom: 5em;
+}
+.section:not(:first-of-type) {
+    border-top: 1px solid var(--light-gray);
+}
+
+.section h2.section-title {
+    color: var(--color-1);
+    margin-bottom: .6em;
+    margin-top: 2em;
+}
+
+.section .section-description {
+    line-height: 1.6em;
+    color: var(--color-2);
+}
+
+.section a {
+    color: var(--color-1);
+    transition: color .3s ease;
+    text-decoration: none;
+} .section a:hover {
+    text-decoration: underline;
+}
+
+.section .list {
+    color: var(--color-2);
+    list-style-type: circle;
+    list-style-position: inside;
+    margin: .5em 0;
+    margin-left: 2em;
+    margin-bottom: .8em;
+}
+
+.section .section-description-code {
+    display: inline-block;
+    background-color: var(--gray);
+    border-radius: 5px;
+    margin: .5em 0;
+    padding: .5em 1em;
+}
+
+.section .section-description-code code {
+    background-color: transparent;
+}
+
+/* DEMO SECTION */
+.section.demo {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.section.demo .section-category {
+    width: 20%;
+    min-width: 15em;
+    min-height: 14em;
+    /* text-align: center; */
+    padding: 0 1em;
+}
+
+@media screen and (max-width: 587px) {
+    .section.demo {
+        justify-content: center;
+    }
+    .section.demo .section-category {
+        min-height: auto;
+        margin-bottom: 4em;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 900px) {
+.section.demo {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3em;
+}
+
+.section.demo .section-category {
+    width: 20%;
+    min-width: 15em;
+    /* text-align: center; */
+    padding: 0 1em;
+    flex-grow: 1;
+}
+}
