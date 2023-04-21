@@ -10,5 +10,20 @@ export default defineConfig({
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
     }
-  }
+  },
+  build: {
+    assetsInlineLimit: 0,
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          'vue': ['vue'],
+        },
+      },
+    },
+  },
+  server: {
+    fs: {
+      strict: false,
+    },
+  },
 })

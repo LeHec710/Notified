@@ -49,7 +49,7 @@ export default class Toast {
 
   set type(value) {
     if (!types.includes(value)) return;
-    const path = "images/toast-library/icons/";
+    const path = "./src/assets/toast-library/icons/";
 
     let titleElem = this._toastElem.querySelector(".toast-title") || null;
     if (!titleElem) {
@@ -109,7 +109,7 @@ export default class Toast {
   }
 
   set close(value) {
-    const path = "images/toast-library/icons/";
+    const path = "./src/assets/toast-library/icons/";
     if (value == true || value == "true") {
       let closeElem = this._toastElem.querySelector(".toast-close") || null;
       if (!closeElem) {

@@ -22,8 +22,8 @@ export const themes = ['default', 'dark', 'colored']
 export const types = ["success", "info", "error", "warning", "loading", "reply"]
 
 // adding css
-const link1 = "'images/toast-library/css/animations.css'"
-const link2 = "'images/toast-library/css/style.css'"
+const link1 = "'./src/assets/toast-library/css/animations.css'"
+const link2 = "'./src/assets/toast-library/css/style.css'"
 document.head.innerHTML += "<link rel='stylesheet' href=" + link1 + ">"
 document.head.innerHTML += "<link rel='stylesheet' href=" + link2 + ">"
 

@@ -1,9 +1,30 @@
-
 /* GENERAL */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+/* bootstrap reset */
+.toast:not(.showing):not(.show) {
+    opacity: 1 !important;
+}
+.toast:not(.show) {
+    display: block!important;
+}
+
+.toast p {
+    margin-bottom: 0;
+}
+
+.toast.default {
+    border: none;
+}
+
+.toast-spawner .toast {
+    width: auto!important;
 }
 
 :root {
@@ -18,11 +39,9 @@
 }
 
 body {
-    background: var(--gray);
-    color: var(--color-1);
+    /* background: var(--gray)!important;
+    color: var(--color-1); */
     font-family: 'Poppins', sans-serif;
-    letter-spacing: .1ch;
-    overflow-y: overlay;
 }
 
 a {
@@ -30,7 +49,7 @@ a {
     color: inherit;
 }
 
-button {
+/* button {
     padding: 1em 1.5em;
     cursor: pointer;
     color: var(--color-2);
@@ -48,10 +67,10 @@ button:hover {
 button.big.center {
     margin: 0 auto;
     font-size: 2em;
-}
+} */
 
 /* NAVBAR */
-nav {
+/* nav {
     width: 100%;
     min-height: 5em;
     height: 8vh;
@@ -104,14 +123,17 @@ nav .menu .menu-link {
 nav .menu .menu-link:hover {
     color: var(--color-2)!important;
     border-color: var(--color-2);
-}
+} */
 
 /* MAIN CONTENT */
+
+/*
 main {
     width: 100vw;
-    padding: min(5vw, 20em);
+    padding: 40px;
     padding-bottom: 0;
 }
+
 
 main .toast-spawner.example {
     margin: 1em 0;
@@ -122,7 +144,6 @@ main .toast-spawner.example .toast {
     margin: 0;
 }
 
-
 main h1 {
     margin-bottom: 1em;
 }
@@ -132,9 +153,10 @@ main h1.center {
 }
 
 /* SECTIONS */
-.section {
+/* .section {
     margin-bottom: 5em;
 }
+
 .section:not(:first-of-type) {
     border-top: 1px solid var(--light-gray);
 }
@@ -154,7 +176,9 @@ main h1.center {
     color: var(--color-1);
     transition: color .3s ease;
     text-decoration: none;
-} .section a:hover {
+}
+
+.section a:hover {
     text-decoration: underline;
 }
 
@@ -177,10 +201,10 @@ main h1.center {
 
 .section .section-description-code code {
     background-color: transparent;
-}
+} */
 
 /* DEMO SECTION */
-.section.demo {
+/* .section.demo {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -190,7 +214,6 @@ main h1.center {
     width: 20%;
     min-width: 15em;
     min-height: 14em;
-    /* text-align: center; */
     padding: 0 1em;
 }
 
@@ -216,8 +239,7 @@ main h1.center {
 .section.demo .section-category {
     width: 20%;
     min-width: 15em;
-    /* text-align: center; */
     padding: 0 1em;
     flex-grow: 1;
 }
-}
+} */

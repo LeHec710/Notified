@@ -1,0 +1,131 @@
+
+@keyframes moveDown {
+    0% {
+        transform: translateY(0);
+        background-color: blue;
+    }
+    99% {
+        background-color: red;
+        transform: translateY(var(--translation));
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInLeft {
+    0% {
+        transform: translateX(-120%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+@keyframes slideOutLeft {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-120%);
+    }
+}
+
+
+@keyframes slideInRight {
+    0% {
+        transform: translateX(120%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+@keyframes slideOutRight {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(120%);
+    }
+}
+
+@keyframes slideInTopCenter {
+    0% {
+        transform: translateY(-120vh)
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideOutTopCenter {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-120vh)
+    }
+}
+
+@keyframes slideInBottomCenter {
+    0% {
+        transform: translateY(120vh)
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideOutBottomCenter {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(120vh)
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes bounceIn {
+    0% {
+        transform-origin: center;
+        transform: scale(0)
+    }
+    70% {
+        transform: scale(1.1)
+    }
+    90% {
+        transform: scale(.95)
+    }
+    100% {
+        transform: scale(1)
+    }
+}
+@keyframes bounceOut {
+    0% {
+        transform-origin: center;
+        transform: scale(1.1)
+    }
+    90% {
+        transform: scale(.95)
+    }
+    100% {
+        transform: scale(0)
+    }
+}
